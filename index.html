@@ -1,389 +1,1204 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
 
-<!-- Mirrored from circles.launchaco.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jan 2020 15:09:46 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<!-- Mirrored from demo.hasthemes.com/aeroland-preview/index-app-showcase.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Jan 2020 04:22:12 GMT -->
 <head>
-    <title>Circles</title>
-    <meta charSet="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Share your moment, with Cricles">
-    <meta property="og:image" content="../cdn.launchaco.com/images/d0150ab7-7069-4632-a75d-48c89a455528.png">
-    <link rel="shortcut icon" href="../cdn.launchaco.com/images/7a69c868-f3f5-4651-91ec-2c4b26284943.png" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="../www.launchaco.com/static/AllTemplates.min.css">
-    <style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aeroland – Responsive App Landing and Website Bootstrap4 Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png">
 
-        .launchaco-promo {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            cursor: pointer;
-            width: 0;
-            height: 0;
-            z-index: 999999;
-        }
+    <!-- CSS
+        ============================================ -->
 
-        .launchaco-promo__active {
-            width: initial;
-            height: initial;
-        }
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
 
-        .launchaco-promo-speechbubble {
-            font-family: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
-            position: absolute;
-            left: 50px;
-            top: -11px;
-            padding: 9px;
-            color: white;
-            border-radius: 3px;
-            background: linear-gradient(#227ef7, #1290fc);
-            font-size: 14px;
-            font-weight: 600;
-            width: 93px;
-            box-sizing: border-box;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity .15s ease-in-out;
-        }
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome-all.min.css">
 
-        .launchaco-promo__active:hover .launchaco-promo-speechbubble {
-            opacity: 1;
-        }
+    <!-- Slick slider CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/slick.min.css">
 
-        .launchaco-promo svg {
-            transition: all .3s ease-in-out;
-            opacity: 0;
-        }
+    <!-- justify CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/justify.css">
 
-        .launchaco-promo__active svg {
-            opacity: 1;
-        }
+    <!-- Swiper slider CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
 
-        .launchaco-promo-speechbubble:before {
-            content: "";
-            width: 10px;
-            height: 10px;
-            transform: rotate(45deg);
-            left: -4px;
-            bottom: 10px;
-            border-radius: 3px;
-            background: #1290fc;
-            z-index: 2;
-            position: absolute
-        }
+    <!-- Odomete CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/odometer.min.css">
 
-        .launchaco-promo__active .launchaco-promo-speechbubble__animate {
-            animation: popinpopup 3s linear forwards 0.1s;
-        }
+    <!-- animate-text CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/animate-text.css">
 
-        @keyframes popinpopup {
-            0% {
-                opacity: 0;
-                transform: translate3d(0, 3px, 0)
-            }
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
 
-            7%, 93% {
-                opacity: 1;
-                transform: translate3d(0, 0, 0)
-            }
+    <!-- Light gallery CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css">
 
-            100% {
-                opacity: 0;
-                transform: translate3d(0, -4px, 0)
-            }
-        }
 
-        .launchaco-promo-animate:hover {
-            opacity: 1 !important;
-        }
-    </style>
 
-    <style>
-        /*New html CSS*/
-        html {
-            scroll-behavior: smooth;
-        }
+    <link rel="stylesheet" href="assets/css/revolution/rs6.css">
 
-        .custom-color-d09610ca-af5d-09cb-8702-237f1e571d0c .accent-bg {
-            background-color: #59C9A5
-        }
 
-        .custom-color-d09610ca-af5d-09cb-8702-237f1e571d0c {
-            background-color: #0E1C36
-        }
+    <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
+    <!--
+        <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+        -->
 
-            .custom-color-d09610ca-af5d-09cb-8702-237f1e571d0c .primary-color {
-                color: #FFFFFF
-            }
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-            .custom-color-d09610ca-af5d-09cb-8702-237f1e571d0c .secondary-bg {
-                background-color: #F06449
-            }
-
-            .custom-color-d09610ca-af5d-09cb-8702-237f1e571d0c .secondary-color {
-                color: #FFFFFF
-            }
-
-            .custom-color-d09610ca-af5d-09cb-8702-237f1e571d0c .svg-fill {
-                fill: #5BC3EB
-            }
-    </style>
-    <!--Add Google Analytics-->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EW91MPGEQY"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-EW91MPGEQY');
-    </script>
 </head>
-<body class="font-modern">
-    <div class="purple-gradient">
-        <!---->
-        <header class="header">
-            <div class="container-lrg">
-                <div class="flex col-12 spread">
-                    <a href="" class="logo launchaco-builder-hoverable logo">
-                        <img src="../cdn.launchaco.com/images/71ca78dc-54bd-483b-9ace-0526edb4a966.png" alt="CirclesCompany Logo">
-                    </a>
-                    <a href="#main-menu" id="menu" class="menu-toggle"><b class="nav-link mr0 secondary-color">☰</b></a>
-                    <nav id="main-menu" role="navigation" class="main-menu">
-                        <a href="#" id="main-menu-close" class="menu-close">
-                            <span class="bold">✕</span>
-                        </a>
-                        <a href="#About" class="nav-link secondary-color">About</a>
-                        <a href="#Why" class="nav-link secondary-color">Why</a>
-                        <a href="#Join" class="nav-link secondary-color">Join Us</a>
-                        <!--<a href="#Blog" class="nav-link secondary-color">Blog</a>-->
-                        <!---->
-                        <!---->
-                    </nav>
-                </div>
+
+<body>
+
+
+    <div class="preloader-activate preloader-active open_tm_preloader">
+        <div class="preloader-area-wrap">
+            <div class="spinner d-flex justify-content-center align-items-center h-100">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
             </div>
-        </header>
-        <section class="section">
-            <div class="container-lrg flex">
-                <div class="col-6 flex flex-column center-vertical mobile-text-center mb40">
-                    <h1 class="heading-lrg primary-color launchaco-builder-hoverable">Share your moment, with Circles</h1>
-                    <h2 class="subheading secondary-color mt20 launchaco-builder-hoverable">Coming soon to iOS</h2>
-                    <div class="mt40">
-                        <form action="https://gmail.us4.list-manage.com/subscribe/post?u=845d464f5899ad173a53eb524&amp;amp;id=c8da14dc0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate" class="container-sml mailchimp flex mb20">
-                            <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Your Email Address" required="required" class="mailchimp-input mobile-text-center">
-                            <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_3198ee66c8baf4d60aa2fee6b_d60e1830e8" tabindex="-1" value=""></div> <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="white-color button no-max-width accent-bg primary-color" value="Update Me!">
-                        </form>
-                    </div>
-                </div>
-                <div class="col-6 flex center-horizontal center-vertical">
-                    <div class="launchaco-builder-hoverable">
-                        <div class=""><img src="../cdn.launchaco.com/images/137dde89-bd63-4382-8c52-8b7912dbf6d6.png" alt="Screenshot of small App" class="custom-img"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
-    <section id="About" class="section purple-white" sitemeta="[object Object]" activepage="Landing">
-        <div class="container-lrg flex">
-            <div class="col-6 flex flex-column center-vertical">
-                <div class="flex mobile-flex-wrap mb20 mobile-text-center">
-                    <i class="icon secondary-bg mr20 mobile-center-icon launchaco-builder-hoverable">
-                        <svg class="svg-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
-                            <path d="M14 1.5v-1a.5.5 0 0 1 1 0v1a.5.5 0 0 1-1 0zm2.854 1.768l1.414-1.414a.5.5 0 0 0-.707-.707L16.146 2.56a.5.5 0 0 0 .708.707zm-4.293 0a.5.5 0 0 0 .707-.707l-1.414-1.415a.5.5 0 0 0-.708.708zm4.314.76L10.113 5.84a1.228 1.228 0 0 0-.68 1.437l1.16 4.328a16.333 16.333 0 0 1 2.648-.156 12.209 12.209 0 0 0 2.22-.126 7.133 7.133 0 0 0 2.297-1.244 8.554 8.554 0 0 1 1.51-.92L18.1 4.737a1 1 0 0 0-1.225-.707zm4.108 19.307a.5.5 0 0 0-.612-.353l-1.45.388-1.559-5.82a4.23 4.23 0 0 0 2.772-5.11l-.61-2.308a9.758 9.758 0 0 0-1.19.764 7.827 7.827 0 0 1-2.661 1.405 12.74 12.74 0 0 1-2.428.148 16.604 16.604 0 0 0-2.392.124l.588 2.197a4.231 4.231 0 0 0 4.956 3.04l1.559 5.818-1.449.389a.5.5 0 0 0 .259.965l3.864-1.035a.5.5 0 0 0 .353-.612zM9.51 11.43a7.178 7.178 0 0 1-1.184-.128 7.827 7.827 0 0 1-2.661-1.405 9.774 9.774 0 0 0-1.19-.763l-.61 2.308a4.23 4.23 0 0 0 2.772 5.11l-1.56 5.819-1.449-.388a.5.5 0 0 0-.258.966l3.863 1.035a.5.5 0 0 0 .26-.966l-1.45-.388 1.56-5.82a4.234 4.234 0 0 0 3.31-.704 5.15 5.15 0 0 1-.438-1.075zm-.973-1.105a5.203 5.203 0 0 0 .7.086l-.77-2.874a2.352 2.352 0 0 1 .137-1.527 1.953 1.953 0 0 1 1.25-1.135l2.076-.556-4.806-1.283a1 1 0 0 0-1.225.707L4.732 8.16a8.54 8.54 0 0 1 1.51.919 7.133 7.133 0 0 0 2.296 1.245z"></path>
-                        </svg>
-                    </i>
-                    <div>
-                        <h3 class="bold primary-color launchaco-builder-hoverable">Introducing moments</h3>
-                        <p class="paragraph secondary-color launchaco-builder-hoverable">Add a photo or video, title it, and pick the color of the Moment.</p>
-                    </div>
-                </div>
-                <div class="flex mobile-flex-wrap mb20 mobile-text-center">
-                    <i class="icon secondary-bg mr20 mobile-center-icon launchaco-builder-hoverable">
-                        <svg class="svg-fill" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 5a5 5 0 1 1 10 0A5 5 0 0 1 3 5zm5 6a8 8 0 0 0-8 8v.5a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5V19a8 8 0 0 0-8-8zm9-3a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-1.522 6H22a4.99 4.99 0 0 0-9.24-2.624A9.06 9.06 0 0 1 15.479 14z"></path>
-                        </svg>
-                    </i>
-                    <div>
-                        <h3 class="bold primary-color launchaco-builder-hoverable">Who's in your Circle?</h3>
-                        <p class="paragraph secondary-color launchaco-builder-hoverable">Create a Circle, add your friends to it, and share your Moments with them!</p>
-                    </div>
-                </div>
-                <div class="flex mobile-flex-wrap mb20 mobile-text-center">
-                    <i class="icon secondary-bg mr20 mobile-center-icon launchaco-builder-hoverable">
-                        <svg class="svg-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
-                            <path d="M24 4.5v19a1.5 1.5 0 0 1-1.5 1.5h-16A1.5 1.5 0 0 1 5 23.5V23h15a2 2 0 0 0 2-2V3h.5A1.5 1.5 0 0 1 24 4.5zM19.5 22h-16A1.5 1.5 0 0 1 2 20.5v-19A1.5 1.5 0 0 1 3.5 0h16A1.5 1.5 0 0 1 21 1.5v19a1.5 1.5 0 0 1-1.5 1.5zM5 4.5a.5.5 0 0 0 .5.5H9a.5.5 0 0 0 0-1H5.5a.5.5 0 0 0-.5.5zm0 3a.5.5 0 0 0 .5.5H9a.5.5 0 0 0 0-1H5.5a.5.5 0 0 0-.5.5zm0 3a.5.5 0 0 0 .5.5H9a.5.5 0 0 0 0-1H5.5a.5.5 0 0 0-.5.5zm13 6a.5.5 0 0 0-.5-.5h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-12a.5.5 0 0 0 0 1h12a.5.5 0 0 0 .5-.5zM18 5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1z"></path>
-                        </svg>
-                    </i>
-                    <div>
-                        <h3 class="bold primary-color launchaco-builder-hoverable">Moments, delivered to your feed</h3>
-                        <p class="paragraph secondary-color launchaco-builder-hoverable">See all the latest Moments from your favorite Circles in one place.</p>
+
+
+
+
+
+
+
+
+
+
+    <!--====================  header area ====================-->
+    <div class="header-area header-sticky header-style-three header-area--absolute">
+        <div class="container-fluid container-fluid--cp-150">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header position-relative">
+                        <div class="open-main-menu-icon openmenu-trigger d-none d-xl-block">
+                            <i></i>
+                        </div>
+                        <!-- mobile menu -->
+                        <div class="mobile-navigation-icon d-block d-xl-none" id="mobile-menu-trigger">
+                            <i></i>
+                        </div>
+                        <!-- brand logo -->
+                        <div class="header__logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/light-logo.png" class="img-fluid light-logo" alt="">
+                                <img src="assets/images/logo/logo-dark.png" class="img-fluid dark-logo" alt="">
+                            </a>
+                        </div>
+
+                        <!-- header actions -->
+                        <div class="header__actions flex-grow-1">
+
+                            <div class="header__icons-wrapper" id="hidden-icon-wrapper">
+                                <div class="minicart-wrapper d-none d-lg-block">
+                                    <a href="javascript:void(0)" class="minicart-icon">
+                                        <span class="cart_count">4</span>
+                                        <i class="far fa-shopping-bag"></i>
+                                    </a>
+                                    <!-- minicart -->
+                                    <div class="minicart-box" id="minicart-box">
+                                        <div class="minicart-product-wrapper">
+                                            <div class="single-minicart-product">
+                                                <div class="single-minicart-product__image">
+                                                    <a href="product-details.html">
+                                                        <img src="assets/images/product/1-150x150.jpg" class="img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="single-minicart-product__content">
+                                                    <a href="#" class="close-icon"><i class="ion-android-close"></i></a>
+                                                    <a href="product-details.html" class="title">Bottle Mockup</a>
+                                                    <p class="quantity">1 x <span class="price">$ 80.00</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="single-minicart-product">
+                                                <div class="single-minicart-product__image">
+                                                    <a href="product-details.html">
+                                                        <img src="assets/images/product/2-150x150.jpg" class="img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="single-minicart-product__content">
+                                                    <a href="#" class="close-icon"><i class="ion-android-close"></i></a>
+                                                    <a href="product-details.html" class="title">Flow-pack Snack Mockup</a>
+                                                    <p class="quantity">1 x <span class="price">$ 90.00</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="single-minicart-product">
+                                                <div class="single-minicart-product__image">
+                                                    <a href="product-details.html">
+                                                        <img src="assets/images/product/3-150x150.jpg" class="img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="single-minicart-product__content">
+                                                    <a href="#" class="close-icon"><i class="ion-android-close"></i></a>
+                                                    <a href="product-details.html" class="title">iMacu Mockup</a>
+                                                    <p class="quantity">1 x <span class="price">$ 900.00</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="single-minicart-product">
+                                                <div class="single-minicart-product__image">
+                                                    <a href="product-details.html">
+                                                        <img src="assets/images/product/4-150x150.jpg" class="img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="single-minicart-product__content">
+                                                    <a href="#" class="close-icon"><i class="ion-android-close"></i></a>
+                                                    <a href="product-details.html" class="title">iPade Mockup</a>
+                                                    <p class="quantity">1 x <span class="price">$ 700.00</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="minicart-calculations">Total: <span class="value">$1100.00</span></p>
+                                        <div class="minicart-buttons">
+                                            <a href="shop-cart.html" class="ht-btn ht-btn-md">View Cart</a>
+                                            <a href="shop-checkout.html" class="ht-btn ht-btn-md">Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="minicart-wrapper d-block d-lg-none">
+                                    <a href="shop-cart.html" class="minicart-icon">
+                                        <span class="cart_count">4</span>
+                                        <i class="far fa-shopping-bag"></i>
+                                    </a>
+                                </div>
+                                <div class="search-icon" id="search-overlay-trigger">
+                                    <a href="javascript:void(0)">
+                                        <i class="far fa-search"></i>
+                                    </a>
+                                </div>
+                                <div class="header-button">
+                                    <a href="#" class="btn">Purchase Now</a>
+                                </div>
+                            </div>
+
+                            <!-- hidden icons menu -->
+                            <div class="hidden-icons-menu d-block d-md-none" id="hidden-icon-trigger">
+                                <a href="javascript:void(0)">
+                                    <i class="far fa-ellipsis-h-alt"></i>
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-6 flex center-horizontal center-vertical">
-                <div class="iphone2 launchaco-builder-hoverable">
-                    <div class="mask"><img src="../cdn.launchaco.com/images/7fec481e-5007-487e-89b7-169e7e0704d5.png" alt="Screenshot of iPhone App" class="mask-img"></div>
+        </div>
+    </div>
+    <!--====================  End of header area  ====================-->
+
+    <div class="open-menuberger-wrapper">
+        <div class="page-close"></div>
+        <ul class="nav-open-menuberger">
+            <li><a href="#" class="hover-style-link hover-style-link--green">Landing</a></li>
+            <li><a href="#" class="hover-style-link hover-style-link--green">About</a></li>
+            <li><a href="#" class="hover-style-link hover-style-link--green">Services</a></li>
+            <li><a href="#" class="hover-style-link hover-style-link--green">Portfolio</a></li>
+            <li><a href="#" class="hover-style-link hover-style-link--green">Blog</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="site-wrapper-reveal">
+
+        <!--========= App Showcase Hero Area Start ===========-->
+        <div class="app-showcase-hero-area" id="slider-section">
+
+            <div class="app-showcase-hero__text text-center">
+                <h1 class="heading text-white">Free App Download Now</h1>
+
+                <div class="app-showcase-hero__sub">
+                    <p>Responsive app for all kinds of purposes.</p>
+                </div>
+
+                <div class="showcase-background__links section-space--mt_30">
+                    <a href="#"><img src="assets/images/icons/aeroland-button-google-play.jpg" class="img-fluid" alt=""></a>
+                    <a href="#"><img src="assets/images/icons/aeroland-button-app-store.jpg" class="img-fluid" alt=""></a>
+                </div>
+
+            </div>
+
+            <!-- START App Showcase REVOLUTION SLIDER 6.0.7 -->
+            <p class="rs-p-wp-fix"></p>
+            <rs-module-wrap id="rev_slider_4_1_wrapper" data-alias="app-showcase" data-source="gallery" style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:-0; ">
+                <rs-module id="rev_slider_4_1" style="display:none;" data-version="6.0.7">
+                    <rs-slides>
+                        <rs-slide data-key="rs-5" data-title="Slide" data-anim="ei:d;eo:d;s:600;r:0;t:fade;sl:d;">
+                            <img src="assets/images/revolution/transparent.png" class="rev-slidebg" alt="">
+                            <!--
+                        -->
+                            <rs-layer id="slider-4-slide-5-layer-1" data-type="image" data-rsp_ch="on" data-xy="x:99px;y:35px;" data-text="l:22;a:inherit;" data-dim="w:747px;h:753px;" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;st:200;sp:1000;sR:200;" data-frame_999="o:0;tp:600;st:w;sR:7800;" data-loop_999="y:30;sp:4000;yym:t;yys:t;yyf:t;" style="z-index:5;"><img src="assets/images/revolution/aeroland-app-showcase-slider-image-iphones.png" width="747" height="753" alt="">
+                            </rs-layer>
+                            <!--
+
+                        -->
+                            <rs-layer id="slider-4-slide-5-layer-3" data-type="image" data-rsp_ch="on" data-xy="x:3px;y:377px;" data-text="l:22;a:inherit;" data-dim="w:270px;h:224px;" data-frame_0="x:200px;skX:-85px;tp:600;" data-frame_1="tp:600;st:500;sp:2000;sR:500;" data-frame_999="o:0;tp:600;st:w;sR:6500;" data-loop_0="xR:10;yR:10;oX:50;oY:50;" data-loop_999="xR:10;yR:10;crd:t;sp:2000;yys:t;yyf:t;" style="z-index:6;"><img src="assets/images/revolution/aeroland-app-showcase-slider-image-message-01.png" width="270" height="224" alt="">
+                            </rs-layer>
+                            <!--
+
+                        -->
+                            <rs-layer id="slider-4-slide-5-layer-2" data-type="image" data-rsp_ch="on" data-xy="x:83px;y:510px;" data-text="l:22;a:inherit;" data-dim="w:278px;h:208px;" data-frame_0="x:200px;skX:-85px;tp:600;" data-frame_1="tp:600;st:500;sp:2000;sR:500;" data-frame_999="o:0;tp:600;st:w;sR:6500;" data-loop_0="xR:10;yR:10;oX:50;oY:50;" data-loop_999="xR:10;yR:10;crd:t;sp:2000;yys:t;yyf:t;" style="z-index:7;"><img src="assets/images/revolution/aeroland-app-showcase-slider-image-message-02.png" width="278" height="208" alt="">
+                            </rs-layer>
+                            <!--
+
+                        -->
+                            <rs-layer id="slider-4-slide-5-layer-4" data-type="image" data-rsp_ch="on" data-xy="x:85px;y:159px;" data-text="l:22;a:inherit;" data-dim="w:238px;h:195px;" data-frame_0="tp:600;" data-frame_1="tp:600;st:500;sp:1000;sR:500;" data-frame_999="o:0;tp:600;st:w;sR:7500;" data-loop_0="xR:10;yR:10;oX:50;oY:50;" data-loop_999="xR:10;yR:10;crd:t;sp:2000;yys:t;yyf:t;" style="z-index:8;"><img src="assets/images/revolution/aeroland-app-showcase-slider-image-heart.png" width="238" height="195" alt="">
+                            </rs-layer>
+                            <!--
+
+                        -->
+                            <rs-layer id="slider-4-slide-5-layer-5" data-type="image" data-rsp_ch="on" data-xy="x:300px;y:10px;" data-text="l:22;a:inherit;" data-dim="w:182px;h:118px;" data-frame_0="y:-50px;tp:600;" data-frame_1="tp:600;st:500;sp:1000;sR:500;" data-frame_999="o:0;tp:600;st:w;sR:7500;" data-loop_0="xR:10;yR:10;oX:50;oY:50;" data-loop_999="xR:10;yR:10;crd:t;sp:2000;yys:t;yyf:t;" style="z-index:9;"><img src="assets/images/revolution/aeroland-app-showcase-slider-image-envelope.png" width="182" height="118" alt="">
+                            </rs-layer>
+                            <!--
+
+                        -->
+                            <rs-layer id="slider-4-slide-5-layer-6" data-type="image" data-rsp_ch="on" data-xy="x:615px;y:52px;" data-text="l:22;a:inherit;" data-dim="w:237px;h:196px;" data-frame_0="y:-50px;tp:600;" data-frame_1="tp:600;st:500;sp:1000;sR:500;" data-frame_999="o:0;tp:600;st:w;sR:7500;" data-loop_0="xR:10;yR:10;oX:50;oY:50;" data-loop_999="xR:10;yR:10;crd:t;sp:2000;yys:t;yyf:t;" style="z-index:10;"><img src="assets/images/revolution/aeroland-app-showcase-slider-image-like.png" width="237" height="196" alt="">
+                            </rs-layer>
+                            <!--
+
+                        -->
+                            <rs-layer id="slider-4-slide-5-layer-7" data-type="image" data-rsp_ch="on" data-xy="x:845px;y:336px;" data-text="l:22;a:inherit;" data-dim="w:70px;h:55px;" data-frame_0="x:50px;tp:600;" data-frame_1="tp:600;st:500;sp:1000;sR:500;" data-frame_999="o:0;tp:600;st:w;sR:7500;" data-loop_0="xR:10;yR:10;oX:50;oY:50;" data-loop_999="xR:10;yR:10;crd:t;sp:2000;yys:t;yyf:t;" style="z-index:11;"><img src="assets/images/revolution/aeroland-app-showcase-slider-image-file.png" width="70" height="55" alt="">
+                            </rs-layer>
+                            <!--
+-->
+                        </rs-slide>
+                    </rs-slides>
+                    <rs-progress class="rs-bottom" style="visibility: hidden !important;"></rs-progress>
+                </rs-module>
+            </rs-module-wrap>
+            <!-- END REVOLUTION SLIDER -->
+
+            <div class="vc_row-separator center_curve_alt bottom"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100">
+                    <path d="M 0 0 L0 100 L100 100 L100 0 Q 50 200 0 0"></path>
+                </svg></div>
+
+        </div>
+        <!--========= App Showcase Hero Area Start ===========-->
+
+        <!--====================  brand logo slider area ====================-->
+        <div class="brand-logo-slider-area section-space--pt_120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- brand logo slider -->
+                        <div class="brand-logo-slider__container-area">
+                            <div class="swiper-container brand-logo-slider__container">
+                                <div class="swiper-wrapper brand-logo-slider__wrapper">
+                                    <div class="swiper-slide brand-logo brand-logo--slider">
+                                        <a href="#">
+                                            <div class="brand-logo__image">
+                                                <img src="assets/images/brand/aeroland-client-logo-01.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="brand-logo__image-hover">
+                                                <img src="assets/images/brand/aeroland-client-logo-01-hover.png" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide brand-logo brand-logo--slider">
+                                        <a href="#">
+                                            <div class="brand-logo__image">
+                                                <img src="assets/images/brand/aeroland-client-logo-02.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="brand-logo__image-hover">
+                                                <img src="assets/images/brand/aeroland-client-logo-02-hover.png" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide brand-logo brand-logo--slider">
+                                        <a href="#">
+                                            <div class="brand-logo__image">
+                                                <img src="assets/images/brand/aeroland-client-logo-03.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="brand-logo__image-hover">
+                                                <img src="assets/images/brand/aeroland-client-logo-03-hover.png" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide brand-logo brand-logo--slider">
+                                        <a href="#">
+                                            <div class="brand-logo__image">
+                                                <img src="assets/images/brand/aeroland-client-logo-04.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="brand-logo__image-hover">
+                                                <img src="assets/images/brand/aeroland-client-logo-04-hover.png" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide brand-logo brand-logo--slider">
+                                        <a href="#">
+                                            <div class="brand-logo__image">
+                                                <img src="assets/images/brand/aeroland-client-logo-05.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="brand-logo__image-hover">
+                                                <img src="assets/images/brand/aeroland-client-logo-05-hover.png" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide brand-logo brand-logo--slider">
+                                        <a href="#">
+                                            <div class="brand-logo__image">
+                                                <img src="assets/images/brand/aeroland-client-logo-06.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="brand-logo__image-hover">
+                                                <img src="assets/images/brand/aeroland-client-logo-06-hover.png" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide brand-logo brand-logo--slider">
+                                        <a href="#">
+                                            <div class="brand-logo__image">
+                                                <img src="assets/images/brand/aeroland-client-logo-07.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="brand-logo__image-hover">
+                                                <img src="assets/images/brand/aeroland-client-logo-07-hover.png" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide brand-logo brand-logo--slider">
+                                        <a href="#">
+                                            <div class="brand-logo__image">
+                                                <img src="assets/images/brand/aeroland-client-logo-08.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="brand-logo__image-hover">
+                                                <img src="assets/images/brand/aeroland-client-logo-08-hover.png" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide brand-logo brand-logo--slider">
+                                        <a href="#">
+                                            <div class="brand-logo__image">
+                                                <img src="assets/images/brand/aeroland-client-logo-09.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="brand-logo__image-hover">
+                                                <img src="assets/images/brand/aeroland-client-logo-09-hover.png" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="Why" class="section purple-black" sitemeta="[object Object]" activepage="Landing">
-        <div class="container text-center mb75">
-            <div class="col-12">
-                <h3 class="heading primary-color launchaco-builder-hoverable">Why Circles?</h3>
-                <p class="subheading secondary-color mt20 launchaco-builder-hoverable">We want to change the way people interact with their friends online.</p>
+        <!--====================  End of brand logo slider area  ====================-->
+
+        <!--============= App Showcase Feature Start =================-->
+        <div class="feature-app-showcase section-space--pt_120">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="app-showcase-progress__title section-space--mb_40">
+                            <div class="circle-progress-wrapper">
+                                <div class="chart-progress" data-fill="{&quot;gradient&quot;: [&quot;#9C7AF2&quot;, &quot;#5E61E7&quot;]}" data-empty-fill="#ededed" data-thickness="4" data-size="160" data-value="0.75" data-reverse="1" data-line-cap="round">
+                                    <div class="chart-progress__inner-wrapper">
+                                        <div class="chart-progress__inner chart-progress__inner--blue">
+                                            <div class="chart-progress__inner-content">
+                                                <h4 class="chart-progress__inner-text"> <span class="chart-number">01</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="circle-design circle-design--blue one"></div>
+                                <div class="circle-design circle-design--blue two"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title-wrap text-center section-space--mb_60">
+                            <h2 class="font-weight--bold mb-15 wow move-up">Innovative Ideas for Apps</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="feature-list__one">
+                            <div class="row">
+                                <div class="col-lg-6  wow move-up">
+                                    <div class="grid-item animate">
+                                        <div class="ht-box-icon style-01">
+                                            <div class="icon-box-wrap">
+                                                <div class="image">
+                                                    <img src="assets/images/icons/aeroland-app-showcase-box-icon-image-01.png" alt="aeroland-app-showcase-box-icon-image-01">
+                                                </div>
+                                                <div class="content">
+                                                    <h6 class="heading">
+                                                        Connect ideas
+                                                    </h6>
+                                                    <div class="text">Consider this app a platform for connecting people from everywhere based on their preferences.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  wow move-up">
+                                    <div class="grid-item animate">
+                                        <div class="ht-box-icon style-01">
+                                            <div class="icon-box-wrap">
+                                                <div class="image">
+                                                    <img src="assets/images/icons/aeroland-app-showcase-box-icon-image-02.png" alt="aeroland-app-showcase-box-icon-image-02">
+                                                </div>
+                                                <div class="content">
+                                                    <h6 class="heading">
+                                                        Make schedules
+                                                    </h6>
+                                                    <div class="text">Consider this app a platform for connecting people from everywhere based on their preferences.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  wow move-up">
+                                    <div class="grid-item animate">
+                                        <div class="ht-box-icon style-01">
+                                            <div class="icon-box-wrap">
+                                                <div class="image">
+                                                    <img src="assets/images/icons/aeroland-app-showcase-box-icon-image-03.png" alt="aeroland-app-showcase-box-icon-image-03">
+                                                </div>
+                                                <div class="content">
+                                                    <h6 class="heading">
+                                                        Manage time
+                                                    </h6>
+                                                    <div class="text">Consider this app a platform for connecting people from everywhere based on their preferences.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  wow move-up">
+                                    <div class="grid-item animate">
+                                        <div class="ht-box-icon style-01">
+                                            <div class="icon-box-wrap">
+                                                <div class="image">
+                                                    <img src="assets/images/icons/aeroland-app-showcase-box-icon-image-04.png" alt="aeroland-app-showcase-box-icon-image-04">
+                                                </div>
+                                                <div class="content">
+                                                    <h6 class="heading">
+                                                        Working mobile
+                                                    </h6>
+                                                    <div class="text">Consider this app a platform for connecting people from everywhere based on their preferences.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container flex">
-            <ul class="checklist col-12">
-                <li class="checklist-item flex center-horizontal spread pad20 launchaco-builder-hoverable">
-                    <p class="bold primary-color mr20">Create Circles and add friends </p> <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
-                        <g transform="translate(4.000000, 5.000000)">
-                            <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
-                        </g>
-                    </svg>
-                </li>
-                <li class="checklist-item flex center-horizontal spread pad20 launchaco-builder-hoverable">
-                    <p class="bold primary-color mr20">Choose which moments to share with each Circle</p> <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
-                        <g transform="translate(4.000000, 5.000000)">
-                            <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
-                        </g>
-                    </svg>
-                </li>
-                <li class="checklist-item flex center-horizontal spread pad20 launchaco-builder-hoverable">
-                    <p class="bold primary-color mr20">Join public groups and find community</p> <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
-                        <g transform="translate(4.000000, 5.000000)">
-                            <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
-                        </g>
-                    </svg>
-                </li>
-                <li class="checklist-item flex center-horizontal spread pad20 launchaco-builder-hoverable">
-                    <p class="bold primary-color mr20">Discover the top moments</p> <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="noshrink svg-fill">
-                        <g transform="translate(4.000000, 5.000000)">
-                            <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
-                        </g>
-                    </svg>
-                </li>
-            </ul>
+
+        <!--============= App Showcase Feature End =================-->
+
+
+        <!--============= App Showcase Feature Start =================-->
+        <div class="feature-app-showcase section-space--pb_90">
+            <div class="container_fl">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="app-showcase-image__media">
+                            <img src="assets/images/banners/aeroland-app-showcase-image-02.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="app-showcase__content">
+                            <div class="app-showcase__inner">
+                                <h4 class="font-weight--light wow move-up">Download Now for Free</h4>
+                                <div class="sub-text section-space--mb_40  wow move-up">
+                                    More than 35 social platforms are integrated into the app. Cross-platform sharing & displaying followers and likes are easy and convenient with just a few clicks.
+                                </div>
+                                <div class="btn-sowcase section-space--mb_40  wow move-up">
+                                    <a href="#" class="ht-btn ht-btn-md"><i class="mr-3 fa fa-play"></i>Intro & demo video </a>
+                                </div>
+
+                                <h6 class="sub-heading  wow move-up">What’s next in AeroLand? <a href="#" class="hover-style-link hover-style-link--green">Learn more</a></h6>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!---->
-    </section>
-    <section id="Join" class="section custom-color-d09610ca-af5d-09cb-8702-237f1e571d0c" sitemeta="[object Object]" activepage="Landing">
-        <!---->
-        <div class="container text-center">
-            <div class="col-12">
-                <h4 class="heading-lrg primary-color launchaco-builder-hoverable">Join Us!</h4>
-                <p class="paragraph mt20 secondary-color mt20 launchaco-builder-hoverable">Be amongst the first social media revolutionaries of the new decade, with Circles.</p>
-                <div class="mt40">
-                    <form action="https://gmail.us4.list-manage.com/subscribe/post?u=845d464f5899ad173a53eb524&amp;amp;id=c8da14dc0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate" class="container-sml mailchimp flex mb20">
-                        <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Your Email Address" required="required" class="mailchimp-input mobile-text-center">
-                        <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_3198ee66c8baf4d60aa2fee6b_d60e1830e8" tabindex="-1" value=""></div> <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="white-color button no-max-width accent-bg button__white" value="Update Me!">
+
+        <!--============= App Showcase Feature End =================-->
+
+        <!--====================  icon process area ====================-->
+
+        <div class="app-showcase-process-wrapper">
+
+            <div class="app-showcase-section__titel">
+                <div class="vc_row-separator center_curve bottom">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100">
+                        <path d="M 0 0 Q 50 200 100 0"></path>
+                    </svg>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="app-showcase-progress__title section-space--mb_40">
+                                <div class="circle-progress-wrapper">
+                                    <div class="chart-progress" data-fill="{&quot;gradient&quot;: [&quot;#9C7AF2&quot;, &quot;#5E61E7&quot;]}" data-empty-fill="#ededed" data-thickness="4" data-size="160" data-value="0.75" data-reverse="1" data-line-cap="round">
+                                        <div class="chart-progress__inner-wrapper">
+                                            <div class="chart-progress__inner chart-progress__inner--blue">
+                                                <div class="chart-progress__inner-content">
+                                                    <h4 class="chart-progress__inner-text"> <span class="chart-number">02</span></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="circle-design circle-design--blue one"></div>
+                                    <div class="circle-design circle-design--blue two"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-showcase-step-wrap">
+
+                <!--============== icon process area Start ===============-->
+                <div class="icon-process-area section-space--pb_120">
+
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="section-title-wrap text-center section-space--mb_60">
+                                    <h2 class="font-weight--bold mb-15  wow move-up">The 3-step process</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="icon-process-wrapper">
+                                    <div class="icon-process-single">
+                                        <div class="icon-process-single__line">
+                                            <div class="dot dot-1"></div>
+                                            <div class="dot dot-2"></div>
+                                            <div class="dot dot-3"></div>
+                                            <div class="dot dot-4"></div>
+                                            <div class="dot dot-5"></div>
+                                            <div class="dot dot-4"></div>
+                                            <div class="dot dot-3"></div>
+                                            <div class="dot dot-2"></div>
+                                            <div class="dot dot-1"></div>
+                                        </div>
+                                        <div class="icon-process-single__content-wrap">
+                                            <div class="icon-process-single__media">
+                                                <i class="fa fa-fire"></i>
+                                            </div>
+                                            <h5 class="icon-process-single__title">Define your ideas</h5>
+                                            <div class="icon-process-single__text">
+                                                Share ideas of how you would like your app to perform to achieve goals.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon-process-single">
+                                        <div class="icon-process-single__line">
+                                            <div class="dot dot-1"></div>
+                                            <div class="dot dot-2"></div>
+                                            <div class="dot dot-3"></div>
+                                            <div class="dot dot-4"></div>
+                                            <div class="dot dot-5"></div>
+                                            <div class="dot dot-4"></div>
+                                            <div class="dot dot-3"></div>
+                                            <div class="dot dot-2"></div>
+                                            <div class="dot dot-1"></div>
+                                        </div>
+                                        <div class="icon-process-single__content-wrap">
+                                            <div class="icon-process-single__media">
+                                                <i class="fa fa-users"></i>
+                                            </div>
+                                            <h5 class="icon-process-single__title">Work on designs</h5>
+                                            <div class="icon-process-single__text">
+                                                After getting your brief, our experts work on crafting the final designs.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon-process-single">
+                                        <div class="icon-process-single__line">
+                                            <div class="dot dot-1"></div>
+                                            <div class="dot dot-2"></div>
+                                            <div class="dot dot-3"></div>
+                                            <div class="dot dot-4"></div>
+                                            <div class="dot dot-5"></div>
+                                            <div class="dot dot-4"></div>
+                                            <div class="dot dot-3"></div>
+                                            <div class="dot dot-2"></div>
+                                            <div class="dot dot-1"></div>
+                                        </div>
+                                        <div class="icon-process-single__content-wrap">
+                                            <div class="icon-process-single__media">
+                                                <i class="fa fa-chart-line"></i>
+                                            </div>
+                                            <h5 class="icon-process-single__title">Coding and Review</h5>
+                                            <div class="icon-process-single__text">
+                                                The final product is obtained from meticulous coding and review.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--============== icon process area End ===============-->
+
+
+                <!--================= App Showcase Process Step Start ====================-->
+                <div class="app-showcase-process-step section-space--pb_30">
+                    <div class="container">
+                        <!-- App Showcase Process Step One Start -->
+                        <div class="app-showcase-process-step__one">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5">
+                                    <div class="app-showcase-process-step__media text-center">
+                                        <img src="assets/images/features/aeroland-app-showcase-image-03.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-7">
+                                    <div class="app-showcase-process-step__content section-space--mt_40">
+                                        <div class="app-showcase__inner">
+
+                                            <div class="sub__title mb-20  wow move-up">
+                                                <h6 class="font-weight--blod">01 – login screen</h6>
+                                            </div>
+                                            <h4 class="font-weight--light  wow move-up">Everything starts with the login screen</h4>
+                                            <div class="sub-text section-space--mb_40  wow move-up">
+                                                The design of a login screen is intended to give users a quick and secure way to access their personal account. Bot detection algorithm is available for selection.
+                                            </div>
+                                            <div class="btn-sowcase section-space--mb_40  wow move-up">
+                                                <a href="#" class="ht-btn ht-btn-md">Download now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- App Showcase Process Step One End -->
+
+                        <!-- App Showcase Process Step Two Start -->
+                        <div class="app-showcase-process-step__two section-space--pt_60">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 order-2 order-lg-1">
+                                    <div class="app-showcase-process-step__content section-space--mt_40">
+                                        <div class="app-showcase__inner">
+
+                                            <div class="sub__title mb-20">
+                                                <h6 class="font-weight--blod  wow move-up">02 – communicate with friends</h6>
+                                            </div>
+                                            <h4 class="font-weight--light wow move-up">A Collection of <br> Advanced Features</h4>
+
+                                                <ul class="check-list green-check-list section-space--mt_30 wow move-up">
+                                                    <li class="list-item">User-friendly, modern and intuitive</li>
+                                                    <li class="list-item">Updated mobile design & features </li>
+                                                    <li class="list-item">Beautiful icons, typography and images </li>
+                                                    <li class="list-item">Extendable premium customer support </li>
+                                                </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 order-1 order-lg-2">
+                                    <div class="app-showcase-process-step__media text-center">
+                                        <img src="assets/images/features/aeroland-app-showcase-image-04.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- App Showcase Process Step End Start -->
+
+                        <!-- App Showcase Process Step Three Start -->
+                        <div class="app-showcase-process-step__three section-space--pt_60">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="app-showcase-process-step__media text-center">
+                                        <img src="assets/images/features/aeroland-app-showcase-image-05.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 offset-lg-1">
+                                    <div class="app-showcase-process-step__content section-space--pt_90">
+                                        <div class="app-showcase__inner">
+
+                                            <div class="sub__title mb-20">
+                                                <h6 class="font-weight--blod  wow move-up">03-social share!</h6>
+                                            </div>
+
+                                            <h4 class="font-weight--light wow move-up">Creative App Display</h4>
+
+                                            <div class="sub-text section-space--mb_40 wow move-up">
+                                                TMore than 35 social platforms are integrated into the app. Cross-platform sharing & displaying followers and likes are easy and convenient with just a few clicks.
+                                            </div>
+                                            <div class="btn-sowcase section-space--mb_40 wow move-up">
+                                                <a href="#" class="ht-btn ht-btn-md">Download now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- App Showcase Process Step Three End -->
+
+
+                    </div>
+                </div>
+                <!--================= App Showcase Process Step End ====================-->
+
+            </div>
+
+        </div>
+        <!--====================  End of icon process area  ====================-->
+        <!--============ Newsletter Section Start  =========== -->
+        <div class="newsletter-section section-space--pb_120">
+
+
+            <div class="app-showcase-section__titel">
+
+                <div class="vc_row-separator center_curve top">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100">
+                        <path d="M 0 0 Q 50 200 100 0"></path>
+                    </svg>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="app-showcase-progress__title section-space--mb_40 section-space--mt_30">
+                                <div class="circle-progress-wrapper">
+                                    <div class="chart-progress" data-fill="{&quot;gradient&quot;: [&quot;#9C7AF2&quot;, &quot;#5E61E7&quot;]}" data-empty-fill="#ededed" data-thickness="4" data-size="160" data-value="0.75" data-reverse="1" data-line-cap="round">
+                                        <div class="chart-progress__inner-wrapper">
+                                            <div class="chart-progress__inner chart-progress__inner--blue">
+                                                <div class="chart-progress__inner-content">
+                                                    <h4 class="chart-progress__inner-text"> <span class="chart-number">03</span></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="circle-design circle-design--blue one"></div>
+                                    <div class="circle-design circle-design--blue two"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 ml-auto mr-auto">
+                        <div class="section-title-wrapper text-center section-space--mb_50 wow move-up">
+                            <h2 class="section-title font-width-bold">Subscribe to receive updates</h2>
+                        </div>
+                        <!-- newsletter form -->
+                        <div class="newsletter-form--two section-space--mb_40 text-center wow move-up">
+                            <form action="#">
+                                <input type="text" placeholder="Your name">
+                                <input type="email" placeholder="Email">
+                                <button class="ht-btn ht-btn-md">Subscribe</button>
+                            </form>
+                        </div>
+
+                        <!-- newsletter text -->
+                        <h6 class="sub-heading text-center wow move-up">What’s next in AeroLand? <a href="#" class="hover-style-link hover-style-link--green">Learn more</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--============ Newsletter Section End  =========== -->
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--====================  footer area ====================-->
+    <div class="footer-area-wrapper reveal-footer default-bg ">
+        <div class="footer-area  section-space--pt_120 section-space--pb_40">
+            <div class="container">
+                <div class="row footer-widget-wrapper">
+                    <div class="col-lg-12">
+                        <div class="app-showcase_footer text-center">
+                            <h3 class="heading text-white">App is available <strong>for free</strong><br> on Google Play &amp; App Store</h3>
+                                <h6 class="sub-title text-white">We’ll help you achieve your marketing & business goals</h6>
+
+                                <div class="showcase-background__links section-space--mt_40">
+                                    <a href="#"><img src="assets/images/icons/aeroland-button-google-play.jpg" class="img-fluid" alt=""></a>
+                                    <a href="#"><img src="assets/images/icons/aeroland-button-app-store.jpg" class="img-fluid" alt=""></a>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright-area section-space--ptb_60">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="social-group__list mb-20 text-center">
+                            <ul class="list ht-social-networks tilte-style">
+                                <li class="item">
+                                    <a href="#" target="_blank" class="social-link"><span class="link-text">Facebook</span></a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" target="_blank" class="social-link"><span class="link-text">Twitter</span> </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" target="_blank" class="social-link"><span class="link-text">Instagram</span></a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" target="_blank" class="social-link"><span class="link-text">Dribbble</span> </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" target="_blank" class="social-link"><span class="link-text">Pinterest</span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row aling-items-center">
+                    <div class="col-md-12">
+                        <div class="horizontal-list text-center">
+                            <ul>
+                                <li> © 2019s AeroLand. All Rights Reserved</li>
+                                <li><a href="tel:" class="hover-style-link hover-style-link--white">(+00) 123 567990</a></li>
+                                <li><a href="mailto:contact@aeroland.com" class="hover-style-link hover-style-link--white">contact@aeroland.com </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====================  End of footer area  ====================-->
+
+
+
+
+
+
+
+
+    <!--====================  scroll top ====================-->
+    <a href="#" class="scroll-top" id="scroll-top">
+        <i class="arrow-top fal fa-long-arrow-up"></i>
+        <i class="arrow-bottom fal fa-long-arrow-up"></i>
+    </a>
+    <!--====================  End of scroll top  ====================-->
+    <!-- Start Toolbar -->
+    <div class="demo-option-container">
+        <!-- Start Toolbar -->
+        <div class="aeroland__toolbar">
+            <div class="inner">
+                <a class="quick-option hint--bounce hint--left hint--black primary-color-hover-important" href="#" aria-label="Quick Options">
+                    <i class="fal fa-project-diagram"></i>
+                </a>
+                <a class="hint--bounce hint--left hint--black primary-color-hover-important" target="_blank" href="https://hasthemes.com/contact-us/" aria-label="Support Center">
+                    <i class="fal fa-life-ring"></i>
+                </a>
+                <a class="hint--bounce hint--left hint--black primary-color-hover-important" target="_blank" href="https://themeforest.net/item/aeroland-app-landing-html-template/24524939" aria-label="Purchase AeroLand ">
+                    <i class="fal fa-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+        <!-- End Toolbar -->
+        <!-- Start Quick Link -->
+        <div class="demo-option-wrapper">
+            <div class="demo-panel-header">
+                <div class="panel-btn">
+                    <a class="ht-btn ht-btn-md" href="https://themeforest.net/item/aeroland-app-landing-html-template/24524939"><i class="ion-android-cart"></i> Buy Aeroland Now </a>
+                </div>
+                <div class="title">
+                    <h6 class="heading mt-30">Aeroland – Responsive App Landing Html5 Template</h6>
+                    <div class="desc">
+                        <p class="bk_pra mt-10"> The multitude of prominents features and crucial tools for create responsive landing apps & websites.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-quick-option-list">
+                <a class="link hint--bounce hint--black hint--top hint--dark" href="blog-list-large-image.html" aria-label="Main">
+                    <img class="img-fluid" src="assets/images/demo-images/home-main.jpg" alt="App Landing Template">
+                </a>
+                <a class="link hint--bounce hint--black hint--top hint--dark" href="shop.html" aria-label="Shop">
+                    <img class="img-fluid" src="assets/images/demo-images/home-shop.jpg" alt="App Landing Template">
+                </a>
+                <a class="link hint--bounce hint--black hint--top hint--dark" href="index-branding.html" aria-label="Branding">
+                    <img class="img-fluid" src="assets/images/demo-images/home-branding.jpg" alt="App Landing Template">
+                </a>
+                <a class="link hint--bounce hint--black hint--top hint--dark" href="index-saas.html" aria-label="Saas">
+                    <img class="img-fluid" src="assets/images/demo-images/home-saas.jpg" alt="App Landing Template">
+                </a>
+                <a class="link hint--bounce hint--black hint--top hint--dark" href="index-app-showcase.html" aria-label="App Showcase">
+                    <img class="img-fluid" src="assets/images/demo-images/home-app-showcase.jpg" alt="App Landing Template">
+                </a>
+                <a class="link hint--bounce hint--black hint--top hint--dark" href="index-software.html" aria-label="Software">
+                    <img class="img-fluid" src="assets/images/demo-images/home-software.jpg" alt="App Landing Template">
+                </a>
+                <a class="link hint--bounce hint--black hint--top hint--dark" href="index-start-ups.html" aria-label="Start ups">
+                    <img class="img-fluid" src="assets/images/demo-images/home-start-ups.jpg" alt="App Landing Template">
+                </a>
+                <a class="link hint--bounce hint--black hint--top hint--dark" href="index-payment.html" aria-label="Payment">
+                    <img class="img-fluid" src="assets/images/demo-images/home-payment.jpg" alt="App Landing Template">
+                </a>
+                <a class="link hint--bounce hint--black hint--top hint--dark" href="index-app-landing.html" aria-label="App Landing">
+                    <img class="img-fluid" src="assets/images/demo-images/home-app-landing.jpg" alt="App Landing Template">
+                </a>
+                <a class="link hint--bounce hint--black hint--top hint--dark" href="index-digital-store.html" aria-label="Digital Store">
+                    <img class="img-fluid" src="assets/images/demo-images/home-digital-store.jpg" alt="App Landing Template">
+                </a>
+                <a class="link hint--bounce hint--black hint--top hint--dark" href="index-digital-agency.html" aria-label="Digital Agency">
+                    <img class="img-fluid" src="assets/images/demo-images/home-digital-agency.jpg" alt="App Landing Template">
+                </a>
+                <a class="link hint--bounce hint--black hint--top hint--dark" href="index-ebook.html" aria-label="ebook">
+                    <img class="img-fluid" src="assets/images/demo-images/home-ebook.jpg" alt="App Landing Template">
+                </a>
+                <a class="link hint--bounce hint--black hint--top hint--dark" href="index-clinic.html" aria-label="Clinic">
+                    <img class="img-fluid" src="assets/images/demo-images/home-clinic.jpg" alt="App Landing Template">
+                </a>
+                <a class="link hint--bounce hint--black hint--top hint--dark" href="index-product-showcase.html" aria-label="Product Showcase">
+                    <img class="img-fluid" src="assets/images/demo-images/home-product-showcase.jpg" alt="App Landing Template">
+                </a>
+            </div>
+        </div>
+        <!-- End Quick Link -->
+    </div>
+    <!-- End Toolbar -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--====================  mobile menu overlay ====================-->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-overlay__inner">
+            <div class="mobile-menu-overlay__header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-8">
+                            <!-- logo -->
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo/logo-dark.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-4">
+                            <!-- mobile menu content -->
+                            <div class="mobile-menu-content text-right">
+                                <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-overlay__body">
+                <nav class="offcanvas-navigation offcanvas-navigation--onepage">
+                    <ul>
+                        <li><a href="index.html">LANDING</a></li>
+                        <li class="active"><a href="#slider-section">HOME</a></li>
+                        <li><a href="#about-section">ABOUT</a></li>
+                        <li><a href="#pricing-section">SERVICE</a></li>
+                        <li><a href="#partners-section">TESTIMONIALS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--====================  End of mobile menu overlay  ====================-->
+
+
+
+
+
+
+
+    <!--====================  search overlay ====================-->
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-overlay__inner">
+            <div class="search-overlay__header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-8">
+                            <!-- logo -->
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo/logo-dark.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-4">
+                            <!-- search content -->
+                            <div class="search-content text-right">
+                                <span class="mobile-navigation-close-icon" id="search-close-trigger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-overlay__body">
+                <div class="search-overlay__form">
+                    <form action="#">
+                        <input type="text" placeholder="Enter search keyword...">
+                        <button type="submit"><i class="far fa-search"></i></button>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!--====================  End of search overlay  ====================-->
+
+    <!-- JS
+    ============================================ -->
     <!--
-    <section id="Blog" class="section purple-white" sitemeta="[object Object]" activepage="Landing">
-        <div class="container mb75 text-center">
-            <div class="col-12">
-                <h3 class="heading primary-color launchaco-builder-hoverable">Perspectives.</h3>
-                <p class="subheading secondary-color launchaco-builder-hoverable">learn more about what we're doing + our vision for social media</p>
-            </div>
-        </div>
-        <div class="container-lrg flex">
-            <div class="col-4 flex launchaco-builder-hoverable">
-                <a target="_blank" href="https://medium.com/@youyuxi/vue-2-5-released-14bd65bf030b" class="blog flex flex-column spread secondary-bg">
-                    <div>
-                        <div class="blog-img" style="background-image: url(_https_/cdn-images-1.medium.com/max/800/1_vB-z-t961mJnd4a6re02Iw.png_);"></div>
-                        <div class="pad20">
-                            <b class="bold primary-color">Vue 2.5 released</b>
-                            <p class="paragraph primary-color">We are excited to announce the release of Vue 2.5 Level E! This release includes improvements of various features and we recommend checking…</p>
-                        </div>
-                    </div>
-                    <div class="flex center-horizontal pad20">
-                        <div class="blog-profilepic" style="background-image: url(_https_/cdn-images-1.medium.com/fit/c/50/50/0_k6Vzz_7jU2jXNEXT.jpeg_);"></div>
-                        <div>
-                            <p class="span secondary-color">Evan You</p> <span class="span secondary-color">Oct 13, 2017 · 3 min read</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-4 flex launchaco-builder-hoverable">
-                <a target="_blank" href="https://medium.com/@youyuxi/upcoming-typescript-changes-in-vue-2-5-e9bd7e2ecf08" class="blog flex flex-column spread secondary-bg">
-                    <div>
-                        <div class="blog-img" style="background-image: url(_https_/cdn-images-1.medium.com/max/800/1_ftKUpzYGIzn1eS87JcBS8Q.gif_);"></div>
-                        <div class="pad20">
-                            <b class="bold primary-color">Upcoming TypeScript Changes in Vue 2.5</b>
-                            <p class="paragraph primary-color">Typing Improvements</p>
-                        </div>
-                    </div>
-                    <div class="flex center-horizontal pad20">
-                        <div class="blog-profilepic" style="background-image: url(_https_/cdn-images-1.medium.com/fit/c/50/50/0_k6Vzz_7jU2jXNEXT.jpeg_);"></div>
-                        <div>
-                            <p class="span secondary-color">Evan You</p> <span class="span secondary-color">Oct 13, 2017 · 3 min read</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-4 flex launchaco-builder-hoverable">
-                <a target="_blank" href="https://medium.com/@youyuxi/vue-is-now-on-opencollective-1ef89ca1334b" class="blog flex flex-column spread secondary-bg">
-                    <div>
-                        <div class="blog-img" style="background-image: url(_https_/cdn-images-1.medium.com/max/800/1_WT87J0dX9D8kyQgxGPx5Vw.png_);"></div>
-                        <div class="pad20">
-                            <b class="bold primary-color">Vue is now on OpenCollective!</b>
-                            <p class="paragraph primary-color">Today we are happy to announce that we have started to accept financial contributions to the Vue project via OpenCollective.</p>
-                        </div>
-                    </div>
-                    <div class="flex center-horizontal pad20">
-                        <div class="blog-profilepic" style="background-image: url(_https_/cdn-images-1.medium.com/fit/c/50/50/0_k6Vzz_7jU2jXNEXT.jpeg_);"></div>
-                        <div>
-                            <p class="span secondary-color">Evan You</p> <span class="span secondary-color">Oct 13, 2017 · 3 min read</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+     Modernizer JS 
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>-->
+
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="assets/js/vendor/popper.min.js"></script>
+
+    <!-- Swiper Slider JS -->
+    <script src="assets/js/plugins/swiper.min.js"></script>
+
+    <!-- Tippy JS -->
+    <script src="assets/js/plugins/tippy.min.js"></script>
+
+    <!-- Light gallery JS -->
+    <script src="assets/js/plugins/lightgallery.min.js"></script>
+
+    <!-- Light gallery video JS -->
+    <script src="assets/js/plugins/lg-video.min.js"></script>
+
+    <!-- Waypoints JS -->
+    <script src="assets/js/plugins/waypoints.min.js"></script>
+
+    <!-- Counter down JS -->
+    <script src="assets/js/plugins/countdown.min.js"></script>
+
+    <!-- Counter down JS -->
+    <script src="assets/js/plugins/odometer.min.js"></script>
+
+    <!-- Isotope JS -->
+    <script src="assets/js/plugins/isotope.min.js"></script>
+
+    <!-- Masonry JS -->
+    <script src="assets/js/plugins/masonry.min.js"></script>
+
+    <!-- ImagesLoaded JS -->
+    <script src="assets/js/plugins/images-loaded.min.js"></script>
+
+    <!-- Appear JS -->
+    <script src="assets/js/plugins/appear.min.js"></script>
+
+    <!-- TweenMax JS -->
+    <script src="assets/js/plugins/TweenMax.min.js"></script>
+
+    <!-- Wavify JS -->
+    <script src="assets/js/plugins/wavify.js"></script>
+
+    <!-- jQuery Wavify JS -->
+    <script src="assets/js/plugins/jquery.wavify.js"></script>
+
+    <!-- circle progress JS -->
+    <script src="assets/js/plugins/circle-progress.min.js"></script>
+
+    <!-- counterup JS -->
+    <script src="assets/js/plugins/counterup.min.js"></script>
+
+    <!-- instafeed JS -->
+    <script src="assets/js/plugins/instafeed.min.js"></script>
+
+    <!-- wow JS -->
+    <script src="assets/js/plugins/wow.min.js"></script>
+
+    <!-- time circles JS -->
+    <script src="assets/js/plugins/time-circles.js"></script>
+
+    <!-- animation text JS -->
+    <script src="assets/js/plugins/animation-text.min.js"></script>
+
+    <!-- one page nav JS -->
+    <script src="assets/js/plugins/one-page-nav.min.js"></script>
+
+    <!-- Mailchimp JS -->
+    <script src="assets/js/plugins/mailchimp-ajax-submit.min.js"></script>
+
+    <!-- test JS -->
+    <script src="assets/js/plugins/test.js"></script>
+
+
+
+
+    <!-- Revolution JS -->
+    <script src="assets/js/revolution/revolution.tools.min.js"></script>
+    <script src="assets/js/revolution/rs6.min.js"></script>
+    <script src="assets/js/revolution.js"></script>
+
+    <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
+
+    <!--
+    <script src="assets/js/plugins/plugins.min.js"></script>
     -->
-    <footer id="footer-5" class="section text-center purple-white" sitemeta="[object Object]" activepage="Landing">
-        <div class="container col-12">
-            <!---->
-            <div><a href="https://instagram.com/trycircles" target="_blank" class="socialicons accent-bg instagram"></a><a href="https://medium.com/trycircles" target="_blank" class="socialicons accent-bg medium"></a><a href="https://twitter.com/trycircles" target="_blank" class="socialicons accent-bg twitter"></a></div>
-            <!---->
-        </div>
-    </footer>
-    <a id="visual-dreamer" class="launchaco-promo" target="_blank" href="https://www.launchaco.com/">
-        <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient x1="9.394%" y1="57.704%" x2="105.69%" y2="27.607%" id="a">
-                    <stop stop-color="#007FFF" offset="0%" />
-                    <stop stop-color="#1290FC" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="50%" y1="0%" x2="50%" y2="137.557%" id="b">
-                    <stop stop-color="#FF9386" offset="0%" />
-                    <stop stop-color="#FF5F86" offset="100%" />
-                </linearGradient>
-                <linearGradient x1="30.817%" y1="-31.6%" x2="63.808%" y2="151.297%" id="c">
-                    <stop stop-color="#D7EDFF" offset="0%" />
-                    <stop stop-color="#FFF" stop-opacity="0" offset="100%" />
-                </linearGradient>
-            </defs>
-            <g fill="none">
-                <circle fill="url(#a)" cx="19.832" cy="19.832" r="19.832" />
-                <path d="M26.616.325l4.308 12.587-4.669-.315L26.218.388c0-.105.091-.19.204-.191.088 0 .166.051.194.128z" fill="url(#b)" transform="rotate(45 28.571 6.555)" />
-                <path d="M32.031 35.658c-6.164 2.721-12.745-4.33-11.992-10.011 2.617.782 4.626.997 7.904 2.01 2.34.769 4.152.479 5.386-1.13 1.234-1.607 1.316-3.502 0-5.158-4.826-5.49 0 0-10.516-12.264l2.923-2.95C.117 4.123 5.302 32.333 6.903 35.095c4.01 3.54 14.11 8.709 25.128.563z" fill="#FFF" />
-                <path d="M9.782 19.176l-.034-.016c0 5.76 4.425 21.794 22.185 16.378-6.148 2.716-12.71-4.29-12.006-9.97a7.394 7.394 0 0 1-2.73.519c-3.922 0-7.135-3.047-7.415-6.911z" fill="url(#c)" />
-                <ellipse fill="#354158" cx="22.185" cy="14.958" rx="2.017" ry="1.849" />
-                <ellipse fill="#354158" cx="22.185" cy="14.958" rx="2.017" ry="1.849" />
-            </g>
-        </svg>
-        <div class="launchaco-promo-speechbubble launchaco-promo-speechbubble__animate">Built With Launchaco</div>
-        <div class="launchaco-promo-speechbubble">Built With Launchaco</div>
-    </a>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+
 </body>
-<!--Remove the launcheco Icon-->
-<!-- Mirrored from circles.launchaco.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jan 2020 15:09:49 GMT -->
+
+
+<!-- Mirrored from demo.hasthemes.com/aeroland-preview/index-app-showcase.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Jan 2020 04:22:39 GMT -->
 </html>
