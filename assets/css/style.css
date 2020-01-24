@@ -104,7 +104,7 @@ body.no-overflow {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #2e3280;
+  color: #000;
   font-family: Rubik, Helvetica, Arial, sans-serif;
   font-weight: 500;
   margin-top: 0;
@@ -256,7 +256,7 @@ a:focus {
 
 a:hover {
   text-decoration: none;
-  color: #5945e6;
+  color: #000;
 }
 
 button, input[type="submit"] {
@@ -298,9 +298,9 @@ ul {
 }
 
 .default-bg {
-  background: -webkit-linear-gradient(349deg, #5E60E7 0, #9C7AF2 65%);
-  background: -o-linear-gradient(349deg, #5E60E7 0, #9C7AF2 65%);
-  background: linear-gradient(-259deg, #5E60E7 0, #9C7AF2 65%);
+  background: -webkit-linear-gradient(349deg, #000 0, #000 65%);
+  background: -o-linear-gradient(349deg, #000 0, #000 65%);
+  background: linear-gradient(-259deg, #000 0, #000 65%);
 }
 
 .gray-gradient {
@@ -320,12 +320,12 @@ ul {
 }
 
 .bg-gradient {
-  background-color: #9C7AF2;
-  background-image: -webkit-linear-gradient(134deg, #9C7AF2 0%, #5E61E7 100%);
-  background-image: -o-linear-gradient(134deg, #9C7AF2 0%, #5E61E7 100%);
-  background-image: -webkit-linear-gradient(226deg, #9C7AF2 0%, #5E61E7 100%);
-  background-image: -o-linear-gradient(226deg, #9C7AF2 0%, #5E61E7 100%);
-  background-image: linear-gradient(224deg, #9C7AF2 0%, #5E61E7 100%);
+  background-color: #000;
+  background-image: -webkit-linear-gradient(134deg, #000 0%, #000 100%);
+  background-image: -o-linear-gradient(134deg, #000 0%, #000 100%);
+  background-image: -webkit-linear-gradient(226deg, #000 0%, #000 100%);
+  background-image: -o-linear-gradient(226deg, #000 0%, #000 100%);
+  background-image: linear-gradient(224deg, #000 0%, #000 100%);
 }
 
 .border-radus-5 {
@@ -333,7 +333,7 @@ ul {
 }
 
 .text-green {
-  color: #38cb89;
+  color: #000;
 }
 
 /*-- Tab Content & Pane Fix --*/
@@ -495,7 +495,7 @@ select {
   -webkit-box-shadow: 0 0 12px #def0ff;
           box-shadow: 0 0 12px #def0ff;
   background: #000;
-  background-color: #5945e6;
+  background-color: #000;
   -webkit-animation: separator-bounce 1.4s ease-in-out 0s infinite both;
           animation: separator-bounce 1.4s ease-in-out 0s infinite both;
   width: 14px;
@@ -801,7 +801,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
 }
 
 .site-wrapper-reveal {
-  background-color: #ffffff;
+  background-color: #000;
 }
 
 .swiper-pagination.swiper-pagination-2 .swiper-pagination-bullet {
@@ -11226,7 +11226,7 @@ ol {
 =        38. App Showcase Css           =
 =============================================*/
 .app-showcase-hero-area {
-  background: #5e61e7;
+  background: #000;
   background-image: url(../images/hero/aeroland-app-showcase-hero-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -11236,7 +11236,7 @@ ol {
 
 .app-showcase-hero-area .vc_row-separator svg {
   height: 178px;
-  fill: #fff;
+  fill: #000;
 }
 
 .app-showcase-hero__text {
@@ -11297,7 +11297,7 @@ ol {
 }
 
 .feature-app-showcase .app-showcase-image__media {
-  text-align: right;
+  text-align: center;
   margin-right: 50px;
 }
 
