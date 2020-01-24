@@ -11237,11 +11237,11 @@ ol {
   height: 178px;
   fill: #fff;
 }
-.blacktext {
-    color: black;
+.whitetext {
+    color: white;
 }
 .app-showcase-hero__text {
-  padding: 140px 0 90px;
+  padding: 50px 0 90px;
 }
 
 .app-showcase-hero__text .heading {
@@ -11266,7 +11266,7 @@ ol {
 }
 
 .app-showcase-hero__sub p {
-  color: #000000;
+  color: #fff;
   font-size: 18px;
 }
 
