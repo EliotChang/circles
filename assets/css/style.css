@@ -11225,9 +11225,14 @@ ol {
 /*=============================================
 =        38. App Showcase Css           =
 =============================================*/
+
 .app-showcase-hero-area {
-  background: #000;
-  background-size: cover;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: url(../images/hero/frontCover.png);
+    background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
