@@ -11304,11 +11304,13 @@ ol {
 
 .feature-app-showcase .app-showcase-image__media {
   text-align: center;
+    padding-top: 50px;
 }
 
 .feature-app-showcase .app-showcase__content {
   max-width: 570px;
-  padding-left: 15px;
+    padding-top: 50px;
+    padding-left: 15px;
   padding-right: 15px;
   width: 100%;
 }
